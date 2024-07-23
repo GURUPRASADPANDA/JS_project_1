@@ -12,7 +12,7 @@ let prevGuess = [];
 let numGuess = 1;
 let playGame = true;
 document.addEventListener('DOMContentLoaded', (event) => {
-  let timeLeft = 200; 
+  let timeLeft = 100; 
 
   const countdownElement = document.querySelector('.time');
   const updateCountdown = () => {
