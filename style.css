@@ -28,8 +28,6 @@ button {
   border-radius: 25px;
   font-size: 30px;
   border-style: none;
-  margin-top: 30px;
-  /* margin-left: 50px; */
 }
 
 #subt {
@@ -43,7 +41,6 @@ button {
   margin-top: 50px;
   /* margin-left: 75px; */
 }
-
 #guessField {
   color: #000;
   width: 250px;
@@ -72,7 +69,7 @@ button {
   box-sizing: border-box;
   text-align: center;
   width: 450px;
-  height: 700px;
+  height: 640px;
   background-color: #474747;
   color: #fff;
   font-size: 25px;

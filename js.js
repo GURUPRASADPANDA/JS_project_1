@@ -11,7 +11,6 @@ const p = document.createElement('p');
 let prevGuess = [];
 let numGuess = 1;
 let playGame = true;
-
 document.addEventListener('DOMContentLoaded', (event) => {
   let timeLeft = 200; 
 
