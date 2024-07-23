@@ -7,13 +7,29 @@ const guessSlot = document.querySelector('.guesses');
 const remaining = document.querySelector('.lastResult');
 const lowOrHi = document.querySelector('.lowOrHi');
 const startOver = document.querySelector('.resultParas');
-
 const p = document.createElement('p');
-
 let prevGuess = [];
 let numGuess = 1;
-
 let playGame = true;
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  let timeLeft = 200; 
+
+  const countdownElement = document.querySelector('.time');
+  const updateCountdown = () => {
+      if (timeLeft > 0) {
+          timeLeft--;
+          countdownElement.textContent = `Time left: ${timeLeft}s`;
+      } else {
+          clearInterval(countdownInterval);
+          
+          countdownElement.textContent = "r";
+          endGame()
+      }
+  };
+
+  const countdownInterval = setInterval(updateCountdown, 1000);
+});
 
 if (playGame) {
   submit.addEventListener('click', function (e) {
